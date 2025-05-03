@@ -1,0 +1,82 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  
+  /* First Big Image Section */
+  .AboutUs-container {
+    margin-top: -450px;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .AboutUs-container img {
+    width: 100%;
+    height: 40vh;;
+    object-fit: cover;
+  }
+  
+  /* About Us Content Section */
+  .AboutUs-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    margin-bottom: 5rem;
+    flex-wrap: wrap;
+    margin-top: 200px;
+  }
+  
+  /* Text Section */
+  .AboutUs-text-section {
+    flex: 1 1 50%;
+    text-align: left;
+  }
+  
+  /* Image Section */
+  .AboutUs-image {
+    flex: 1 1 45%;
+    max-height: 500px;
+    border-radius: 12px;
+    object-fit: cover;
+    object-position: top;
+  }
+  
+  /* Title and Text */
+  .AboutUs-title {
+    font-size: 2.75rem;
+    color: #fc6e51;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+  }
+  
+  .AboutUs-text {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: #333;
+    margin-top: 1rem;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .AboutUs-content {
+      flex-direction: column;
+      text-align: left;
+      gap: 2rem;
+    }
+  
+    .AboutUs-text-section,
+    .AboutUs-image {
+      width: 100%;
+    }
+  
+    .AboutUs-title {
+      font-size: 2rem;
+    }
+  
+    .AboutUs-text {
+      font-size: 1rem;
+    }
+  }
+  

@@ -1,0 +1,140 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  
+  .Mathematics-container {
+    margin-top: -450px;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .Mathematics-container img {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+  }
+  /* Main layout for each section */
+  .section {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+    flex-wrap: nowrap;
+    height: 360px; /* Enforce same height */
+    margin-top: 150px;
+  }
+  
+  /* Alternate layout */
+  .section:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  
+  /* Image container */
+  .section-image {
+    flex: 1 1 50%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  /* Image fills the area with cropping */
+  .section-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 60% top;
+    display: block;
+  }
+  
+  /* Text section */
+  .section-text {
+    flex: 1 1 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align to top */
+    padding: 1rem 0;
+    margin-top: -40px;
+  }
+  
+  .section-text h2 {
+    font-size: 2.25rem;
+    color: #fc6e51;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+  
+  .section-text p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.75;
+    margin: 0;
+  }
+  
+  /* Mobile layout */
+  @media (max-width: 768px) {
+    .section {
+      flex-direction: column !important;
+      height: auto;
+    }
+  
+    .section-image,
+    .section-text {
+      width: 100%;
+      height: auto;
+    }
+  
+    .section-text {
+      padding: 1rem 0;
+      text-align: center;
+    }
+  
+    .section-text h2 {
+      font-size: 1.75rem;
+    }
+  
+    .section-text p {
+      font-size: 1rem;
+    }
+  }
+  
+  .discount-offer {
+    background: linear-gradient(135deg, #fc6e51, #ff9472);
+    color: white;
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    margin: 3rem 0;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .discount-offer h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+  
+  .discount-offer p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .cta-button {
+    background-color: white;
+    color: #fc6e51;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .cta-button:hover {
+    background-color: #ffe1d8;
+  }
+  
