@@ -25,7 +25,7 @@ function ContactUs() {
         <div className = "contact-section">
             <h3>Contact Information</h3>
             <p>Email: <a href="mailto:contact@yourdomain.com">joshua.almaleh@aspiretutors.ca</a></p>
-             <p>Phone: <a href="tel:+1234567890">+1 (514) 629-3631</a></p>
+             {/* <p>Phone: <a href="tel:+1234567890">+1 (514) 629-3631</a></p> */}
             
                 </div>
         </div>
