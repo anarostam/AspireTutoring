@@ -1,11 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../CSS_folder/Header.css';
 
 export default function Header() {
-    const handleNavigation = (path) => {
-        window.location.href = path;
-    };
-
     return (
         <div className="home-container">
             <header className="header">
@@ -16,25 +13,25 @@ export default function Header() {
                 <div className="nav-container">
                     <ul className="nav-list">
                         <li>
-                            <button className="nav-button" onClick={() => handleNavigation('/#home')}>Home</button>
+                            <Link to="/home"><button className="nav-button">Home</button></Link>
                         </li>
                         <li>
-                            <button className="nav-button" onClick={() => handleNavigation('/#ourservices')}>Our Services</button>
+                            <Link to="/ourservices"><button className="nav-button">Our Services</button></Link>
                         </li>
                         <li>
-                            <button className="nav-button" onClick={() => handleNavigation('/#aboutus')}>About Us</button>
+                            <Link to="/aboutus"><button className="nav-button">About Us</button></Link>
                         </li>
                         <li>
-                            <button className="nav-button" onClick={() => handleNavigation('/#mathematics')}>Mathematics</button>
+                            <Link to="/mathematics"><button className="nav-button">Mathematics</button></Link>
                         </li>
                         <li>
-                            <button className="nav-button" onClick={() => handleNavigation('/#languages')}>Languages</button>
+                            <Link to="/languages"><button className="nav-button">Languages</button></Link>
                         </li>
                         <li>
-                            <button className="nav-button" onClick={() => handleNavigation('/#sciences')}>Sciences</button>
+                            <Link to="/sciences"><button className="nav-button">Sciences</button></Link>
                         </li>
                         <li>
-                            <button className="nav-button" onClick={() => handleNavigation('/#contactus')}>Contact Us</button>
+                            <Link to="/contactus"><button className="nav-button">Contact Us</button></Link>
                         </li>
                     </ul>
                 </div>
