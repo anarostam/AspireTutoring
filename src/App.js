@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Header from './Components/Header';
 import Home from './Pages/Home';
 import Footer from './Components/Footer';
@@ -10,25 +10,23 @@ import Sciences from './Pages/Sciences';
 import Mathematics from './Pages/Mathematics';
 import OurServices from './Pages/OurServices';
 
-function App() {
-  useEffect(() => {
-    // This will listen for route changes and scroll to the top
-    const scrollToTop = () => window.scrollTo(0, 0);
-    
-    // Attach the scroll listener to the hashchange event
-    window.addEventListener('hashchange', scrollToTop);
-    
-    return () => {
-      // Clean up the event listener when the component is unmounted
-      window.removeEventListener('hashchange', scrollToTop);
-    };
-  }, []);
+function ScrollToTop() {
+  const { pathname } = useLocation();
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
+function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Header />
       <Routes>
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/contactus" element={<ContactUs />} />
         <Route path="/languages" element={<Languages />} />
