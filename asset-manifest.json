@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/AspireTutoring/static/css/main.e1142185.css",
+    "main.js": "/AspireTutoring/static/js/main.2e1a3d6f.js",
+    "static/js/453.12d15e9a.chunk.js": "/AspireTutoring/static/js/453.12d15e9a.chunk.js",
+    "index.html": "/AspireTutoring/index.html",
+    "main.e1142185.css.map": "/AspireTutoring/static/css/main.e1142185.css.map",
+    "main.2e1a3d6f.js.map": "/AspireTutoring/static/js/main.2e1a3d6f.js.map",
+    "453.12d15e9a.chunk.js.map": "/AspireTutoring/static/js/453.12d15e9a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e1142185.css",
+    "static/js/main.2e1a3d6f.js"
+  ]
+}
