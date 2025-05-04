@@ -19,7 +19,7 @@ export const Services = () => {
                     <p className="card-content">
                         Personalised Mathematics lessons with focus on problem-solving and foundation building.
                     </p>
-                    <Link to="/mathematics">
+                    <Link to="/mathematics" className="card-link">
                     <button
                         className="card-button"
                         
@@ -38,7 +38,7 @@ export const Services = () => {
                     <p className="card-content">
                         Interactive language lessons to improve reading, writing, and communication skills.
                     </p>
-                    <Link to="/languages">
+                    <Link to="/languages" className="card-link">
                     <button
                         className="card-button"
                     >
@@ -56,7 +56,7 @@ export const Services = () => {
                     <p className="card-content">
                         Comprehensive Science Tutoring covering various scientific subjects for deeper understanding.
                     </p>
-                    <Link to="/sciences">
+                    <Link to="/sciences" className="card-link">
                     <button
                         className="card-button"
                     >

@@ -163,6 +163,11 @@
     max-height: 150px;
     object-fit: cover;
   }
+  .card-link {
+    text-align: center; 
+  }
+
+  
   
 .faq-container {
     display: flex;
