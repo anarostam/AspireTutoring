@@ -1,10 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../CSS_folder/Home.css';
 
 export const Services = () => {
-    const handleNavigation = (path) => {
-        window.location.href = path;
-    };
+    
 
     return (
         <div>
@@ -20,12 +19,14 @@ export const Services = () => {
                     <p className="card-content">
                         Personalised Mathematics lessons with focus on problem-solving and foundation building.
                     </p>
+                    <Link to="/mathematics">
                     <button
                         className="card-button"
-                        onClick={() => handleNavigation('/#mathematics')}
+                        
                     >
                         More info
                     </button>
+                    </Link>
                 </div>
                 <div className="Services-card">
                     <img
@@ -37,12 +38,13 @@ export const Services = () => {
                     <p className="card-content">
                         Interactive language lessons to improve reading, writing, and communication skills.
                     </p>
+                    <Link to="/languages">
                     <button
                         className="card-button"
-                        onClick={() => handleNavigation('/#languages')}
                     >
                         More info
                     </button>
+                    </Link>
                 </div>
                 <div className="Services-card">
                     <img
@@ -54,12 +56,13 @@ export const Services = () => {
                     <p className="card-content">
                         Comprehensive Science Tutoring covering various scientific subjects for deeper understanding.
                     </p>
+                    <Link to="/sciences">
                     <button
                         className="card-button"
-                        onClick={() => handleNavigation('/#sciences')}
                     >
                         More info
                     </button>
+                    </Link>
                 </div>
             </div>
         </div>
